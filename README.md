@@ -1,8 +1,6 @@
-## AMEGAKURE_FORGE_CONTEXT: CIVIL
-## AMEGAKURE_FORGE_VERSION: 3.0
-## AMEGAKURE_FORGE_DATE: 2026-08-14T11:00:00Z
+# 🏯 Amegakure_CTFs_Labs_WriteUps
 
-## 🏯 Amegakure_CTFs_Labs_WriteUps
+## AMEGAKURE_FORGE_DATE: 2026-08-14T11:00:00Z
 
 Repositorio Oficial de Registro Forense, Auditoría y Explotación de Máquinas CTFs, Laboratorios y Entornos Vulnerables del **Ecosistema AmegakureDojo**.
 
@@ -43,6 +41,6 @@ Amegakure_CTFs_Labs_WriteUps/
 ## 📜 Autoridades y Certificación
 
 - **K0M0RI** — Jefe de AmegakureOffSec
-- **KuramaCore** — Segundo al mando y orquestador agéntico del ecosistema AmegakureDojo
+- **KuramaCore** — Agente Orquestador del ecosistema AmegakureDojo
 
 *Certificado bajo la Doctrina AmegakureForge V3 — Nivel Militar Forense SS*
