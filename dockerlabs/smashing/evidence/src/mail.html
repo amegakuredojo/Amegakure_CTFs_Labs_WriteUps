@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - Cybersec Mail</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #0A1F3D, #1E1E1E);
+      color: #FFFFFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Contenedor principal */
+    .login-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Logo */
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    /* Eslogan */
+    .slogan {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #00FFCC;
+    }
+
+    /* Formulario */
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      font-size: 1em;
+    }
+
+    .login-form input::placeholder {
+      color: #CCCCCC;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #00FFCC;
+      color: #0A1F3D;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-form button:hover {
+      background: #00E6B8;
+    }
+
+    /* Enlace de contraseña */
+    .forgot-password {
+      display: block;
+      margin-top: 10px;
+      color: #00FFCC;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    /* Mensaje de seguridad */
+    .security-message {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #CCCCCC;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='correo.png') }}" alt="Cybersec Logo" class="logo">
+    <!-- Eslogan -->
+    <div class="slogan">Seguridad en cada byte</div>
+    <!-- Formulario de inicio de sesión -->
+    <form class="login-form">
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="password" placeholder="Contraseña" required>
+      <button type="submit">Iniciar sesión</button>
+      <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+    </form>
+    <!-- Mensaje de seguridad -->
+    <div class="security-message">🔒 Protegemos tu información con cifrado de extremo a extremo.</div>
+  </div>
+</body>
+</html>

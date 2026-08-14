@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.name }}</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.5em;
+            text-align: justify;
+        }
+        .service-section {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .animation-container {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cybersecurity-animation {
+            font-size: 20px;
+            color: #333;
+            white-space: nowrap;
+            animation: move-text 15s linear infinite;
+        }
+
+        @keyframes move-text {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .contact-form {
+            margin-top: 1px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+    <script>
+        function fetchPassword() {
+            fetch('/api/1passwsecu0')
+                .then(response => response.json())
+                .then(data => {
+                    const passwordContainer = document.querySelector('.cybersecurity-animation');
+                    passwordContainer.textContent = ` 🔐 Protege tus datos 📁. La Ciberseguridad es Clave! --- Ejemplo de Contraseñas Seguras🔑: ${data.password}`;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+        function startFetchingPasswords() {
+           fetchPassword();
+           setInterval(fetchPassword, 2000);
+        }
+
+        document.addEventListener('DOMContentLoaded', startFetchingPasswords);
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.service-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        window.addEventListener('scroll', function() {
+            const animation = document.querySelector('.cybersecurity-animation');
+            const position = animation.getBoundingClientRect().top;
+
+
+            if (position < window.innerHeight && position >= 0) {
+            animation.classList.add('visible');
+            } else {
+                animation.classList.remove('visible');
+            }
+        });
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            alert("Mensaje enviado, será contactado a la brevedad posible...");
+        }
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('.contact-form form');
+            form.addEventListener('submit', handleFormSubmit);
+        });
+    </script>
+</head>
+<body>
+    <h1>Servicios de Ciberseguridad de {{ data.name }}</h1>
+    
+    <button onclick="showSection('auditorias')">Auditorías de Seguridad</button>
+    <button onclick="showSection('pentesting')">Pentesting</button>
+    <button onclick="showSection('consultoria')">Consultoría en Ciberseguridad</button>
+
+    <div id="auditorias" class="service-section">
+        <h2>Auditorías de Seguridad</h2>
+        <p>Las auditorías de seguridad son evaluaciones sistemáticas y objetivas de la seguridad de un sistema, red o aplicación. Su objetivo es identificar vulnerabilidades, evaluar los controles de seguridad existentes y garantizar que se cumplan las políticas de seguridad. Este proceso incluye la revisión de configuraciones, análisis de riesgos y pruebas de cumplimiento normativo.</p>
+        <p>Nuestros expertos realizan auditorías exhaustivas que abarcan todos los aspectos de la seguridad informática, proporcionando un informe detallado con recomendaciones para mejorar la postura de seguridad de su organización.</p>
+    </div>
+
+    <div id="pentesting" class="service-section">
+        <h2>Pentesting</h2>
+        <p>El pentesting, o pruebas de penetración, es una técnica utilizada para evaluar la seguridad de un sistema simulando un ataque real por parte de un hacker. Este enfoque proactivo permite identificar vulnerabilidades antes de que puedan ser explotadas por atacantes malintencionados.</p>
+        <p>Nuestro equipo realiza pentests exhaustivos que incluyen reconocimiento, escaneo, explotación y post-explotación, asegurando una cobertura completa de sus sistemas. Al final del proceso, proporcionamos un informe detallado que incluye hallazgos y recomendaciones para mitigar riesgos.</p>
+    </div>
+
+    <div id="consultoria" class="service-section">
+        <h2>Consultoría en Ciberseguridad</h2>
+        <p>La consultoría en ciberseguridad implica la asesoría a organizaciones sobre cómo proteger sus activos digitales y cumplir con las normativas vigentes. Nuestros consultores trabajan estrechamente con su equipo para desarrollar estrategias personalizadas que aborden sus necesidades específicas.</p>
+        <p>Ofrecemos servicios que incluyen evaluación de riesgos, desarrollo de políticas de seguridad, capacitación del personal y planificación de respuesta a incidentes, asegurando que su organización esté preparada para enfrentar cualquier desafío en el ámbito de la ciberseguridad.</p>
+    </div>
+
+    <div class="animation-container">
+        <div class="cybersecurity-animation">
+        <!-- El contenido se actualizará dinámicamente aquí -->
+        </div>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="contact-form">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; {{ current_year }} {{ data.name }}. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
