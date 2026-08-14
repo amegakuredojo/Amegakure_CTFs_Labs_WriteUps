@@ -1,8 +1,8 @@
-# AMEGAKURE_FORGE_CONTEXT: CIVIL
-# AMEGAKURE_FORGE_VERSION: 3.0
-# AMEGAKURE_FORGE_DATE: 2026-08-14T11:00:00Z
+## AMEGAKURE_FORGE_CONTEXT: CIVIL
+## AMEGAKURE_FORGE_VERSION: 3.0
+## AMEGAKURE_FORGE_DATE: 2026-08-14T11:00:00Z
 
-# 🏯 Amegakure_CTFs_Labs_WriteUps
+## 🏯 Amegakure_CTFs_Labs_WriteUps
 
 Repositorio Oficial de Registro Forense, Auditoría y Explotación de Máquinas CTFs, Laboratorios y Entornos Vulnerables del **Ecosistema AmegakureDojo**.
 
