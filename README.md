@@ -44,7 +44,7 @@ Amegakure_CTFs_Labs_WriteUps/
 | Plataforma | Máquina | Dificultad | Vectores Principales | Firma de Autoridad | Write-Up |
 |---|---|---|---|---|---|
 | **DockerLabs** | `smashing` | **Hard** | RCE (`serverpi:25000` ?exec= bypass) + SUID root (`smashing`) + CSRF | **K0M0RI** & **KuramaCore** | [WRITEUP_smashing.md](./dockerlabs/smashing/WRITEUP_smashing.md) |
-| **DockerLabs** | `RaaS` | **Medium** | Enum SMB (null session) + Reversing estático AES-256-CBC (KEY/IV hardcodeados) + descifrado + PoC privesc `bob→calamardo` (NOPASSWD `/bin/node`) | **KuramaCore** | [WRITEUP_RaaS.md](./dockerlabs/RaaS/audit/intel_consolidada/WRITEUP_RaaS.md) |
+| **DockerLabs** | `RaaS` | **Medium** | Enum SMB (null session) + Reversing estático AES-256-CBC (KEY/IV hardcodeados) + descifrado + PoC privesc `bob→calamardo` (NOPASSWD `/bin/node`) | **K0M0RI** & **KuramaCore** | [WRITEUP_RaaS.md](./dockerlabs/RaaS/audit/intel_consolidada/WRITEUP_RaaS.md) |
 
 ---
 
