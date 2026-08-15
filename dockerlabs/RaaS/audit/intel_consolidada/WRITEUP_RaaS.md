@@ -9,8 +9,8 @@
 # ============================================================================
 
 **Clasificación de Inteligencia:** OFFENSIVE / AMBIENTE CONTROLADO
-**Plataforma Target:** DockerLabs — Máquina: `RaaS` (Ransomware-as-a-Service, Dificultad: MEDIUM)
-**Alcance (Scope):** Contenedor `raas` (Ubuntu 24.04, SMB + SSH) en `172.17.0.2` (docker bridge). NO el host subyacente.
+**Plataforma Target:** DockerLabs — Máquina: `RaaS` (Ransomware-as-a-Service, Dificultad: HARD)
+**Alcance (Scope):** Contenedor `raas` (Ubuntu 24.04, SMB + SSH) en `172.17.0.2` (docker bridge).
 **Restricción RoE HARD:** Prohibido ejecutar binarios del malware. Reversing 100% estático. Prohibido modificar el contenedor.
 **Metodología:** Black-box recon SMB + White-box reversing estático de binario AES-256-CBC + descifrado con script propio.
 **Doctrina Operativa:** AmegakureForge V3.1 — Shakujo Protocol.
@@ -263,6 +263,9 @@ FIRMA DE AUTORIDAD Y APROBACIÓN FORENSE
 ====================================================================================
 
 Firmado y Validado por:
+
+K0M0RI
+Jefe AmegakureDojo
 
 KuramaCore
 Orquestador agéntico del ecosistema AmegakureDojo
