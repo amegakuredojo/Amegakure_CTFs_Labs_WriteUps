@@ -1,0 +1,64 @@
+sudo: a password is required
+node:child_process:965
+    throw err;
+    ^
+
+Error: Command failed: id; echo ---; whoami; echo ---; ls -la /srv/ransom; echo --- sudo -l ---; sudo -n -l
+sudo: a password is required
+
+    at checkExecSyncError (node:child_process:890:11)
+    at Object.execSync (node:child_process:962:15)
+    at [eval]:1:38
+    at Script.runInThisContext (node:vm:122:12)
+    at Object.runInThisContext (node:vm:298:38)
+    at node:internal/process/execution:82:21
+    at [eval]-wrapper:6:24
+    at runScript (node:internal/process/execution:81:62)
+    at evalScript (node:internal/process/execution:103:10) {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    Buffer(408) [Uint8Array] [
+      117, 105, 100,  61,  49,  48,  48,  51,  40,  99,  97, 108,
+       97, 109,  97, 114, 100, 111,  41,  32, 103, 105, 100,  61,
+       49,  48,  48,  51,  40,  99,  97, 108,  97, 109,  97, 114,
+      100, 111,  41,  32, 103, 114, 111, 117, 112, 115,  61,  49,
+       48,  48,  51,  40,  99,  97, 108,  97, 109,  97, 114, 100,
+      111,  41,  44,  49,  48,  48,  40, 117, 115, 101, 114, 115,
+       41,  10,  45,  45,  45,  10,  99,  97, 108,  97, 109,  97,
+      114, 100, 111,  10,  45,  45,  45,  10, 116, 111, 116,  97,
+      108,  32,  50,  56,
+      ... 308 more items
+    ],
+    Buffer(29) [Uint8Array] [
+      115, 117, 100, 111,  58,  32,  97,
+       32, 112,  97, 115, 115, 119, 111,
+      114, 100,  32, 105, 115,  32, 114,
+      101, 113, 117, 105, 114, 101, 100,
+       10
+    ]
+  ],
+  pid: 162,
+  stdout: Buffer(408) [Uint8Array] [
+    117, 105, 100,  61,  49,  48,  48,  51,  40,  99,  97, 108,
+     97, 109,  97, 114, 100, 111,  41,  32, 103, 105, 100,  61,
+     49,  48,  48,  51,  40,  99,  97, 108,  97, 109,  97, 114,
+    100, 111,  41,  32, 103, 114, 111, 117, 112, 115,  61,  49,
+     48,  48,  51,  40,  99,  97, 108,  97, 109,  97, 114, 100,
+    111,  41,  44,  49,  48,  48,  40, 117, 115, 101, 114, 115,
+     41,  10,  45,  45,  45,  10,  99,  97, 108,  97, 109,  97,
+    114, 100, 111,  10,  45,  45,  45,  10, 116, 111, 116,  97,
+    108,  32,  50,  56,
+    ... 308 more items
+  ],
+  stderr: Buffer(29) [Uint8Array] [
+    115, 117, 100, 111,  58,  32,  97,
+     32, 112,  97, 115, 115, 119, 111,
+    114, 100,  32, 105, 115,  32, 114,
+    101, 113, 117, 105, 114, 101, 100,
+     10
+  ]
+}
+
+Node.js v18.19.1

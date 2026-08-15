@@ -1,0 +1,12 @@
+netname: print$
+	remark:	Printer Drivers
+	path:	C:\var\lib\samba\printers
+	password:	
+netname: ransomware
+	remark:	
+	path:	C:\srv\ransom
+	password:	
+netname: IPC$
+	remark:	IPC Service (dockerlabs server (Samba, Ubuntu))
+	path:	C:\tmp
+	password:	

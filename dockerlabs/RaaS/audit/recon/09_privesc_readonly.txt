@@ -1,0 +1,42 @@
+== sudo -l ==
+Matching Defaults entries for bob on dockerlabs:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
+
+User bob may run the following commands on dockerlabs:
+    (calamardo) NOPASSWD: /bin/node
+== suid (top) ==
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/gpasswd
+/usr/bin/mount
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/su
+/usr/bin/umount
+/usr/bin/sudo
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+== crontab ==
+bash: line 1: crontab: command not found
+/etc/cron.d:
+total 8
+drwxr-xr-x. 1 root root   6 Jan  5  2025 .
+drwxr-xr-x. 1 root root  56 Aug 14 21:49 ..
+-rw-r--r--. 1 root root 201 Apr  8  2024 e2scrub_all
+-rw-r--r--. 1 root root 712 Jan 18  2024 php
+
+/etc/cron.daily:
+total 12
+drwxr-xr-x. 1 root root   14 Jan  5  2025 .
+== home ==
+total 1124
+drwxr-x---. 1 bob  bob       96 Jan  5  2025 .
+drwxr-xr-x. 1 root root      18 Jan  5  2025 ..
+lrwxrwxrwx. 1 root root       9 Jan  5  2025 .bash_history -> /dev/null
+-rw-r--r--. 1 bob  bob      220 Jan  5  2025 .bash_logout
+-rw-r--r--. 1 bob  bob     3771 Jan  5  2025 .bashrc
+drwx------. 1 bob  bob       40 Jan  5  2025 .cache
+-rw-r--r--. 1 bob  bob      816 Jan  5  2025 .profile
+-rw-------. 1 bob  bob  1110016 Jan  5  2025 core.63123
+-rwxr-xr-x. 1 bob  bob    17592 Jan  5  2025 pokemongo
+-rw-rw-r--. 1 bob  bob       48 Jan  5  2025 private.txt

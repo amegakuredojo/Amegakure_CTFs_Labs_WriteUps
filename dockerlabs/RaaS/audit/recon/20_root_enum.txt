@@ -1,0 +1,19 @@
+LBL_node_read_root
+NOREAD /etc/shadow: EACCES: permission denied, open '/etc/shadow'
+NOREAD /etc/sudoers: EACCES: permission denied, open '/etc/sudoers'
+NOREAD /root/.bash_history: EACCES: permission denied, open '/root/.bash_history'
+NOREAD /home/patricio/.bash_history: EACCES: permission denied, open '/home/patricio/.bash_history'
+NOREAD /home/patricio/private.txt: EACCES: permission denied, open '/home/patricio/private.txt'
+LBL_world_writable
+LBL_encrypted_files_search
+CAND /home/bob/.profile 816 bytes
+CAND /home/bob/core.63123 1110016 bytes
+CAND /home/bob/private.txt 48 bytes
+LBL_srv_ransom_listing
+total 28
+drwxrwxr-x. 1 patricio patricio    34 Jan  5  2025 .
+drwxr-xr-x. 1 root     root        12 Jan  5  2025 ..
+-rw-rw-r--. 1 patricio patricio   379 Jan  5  2025 nota.txt
+-rw-rw-r--. 1 patricio patricio 17592 Jan  4  2025 pokemongo
+-rw-rw-r--. 1 patricio patricio    48 Jan  5  2025 private.txt
+DONE

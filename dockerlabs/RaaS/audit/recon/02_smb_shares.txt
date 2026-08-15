@@ -1,0 +1,4 @@
+Disk|print$|Printer Drivers
+Disk|ransomware|
+IPC|IPC$|IPC Service (dockerlabs server (Samba, Ubuntu))
+SMB1 disabled -- no workgroup available

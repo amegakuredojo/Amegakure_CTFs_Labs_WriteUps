@@ -1,0 +1,75 @@
+LBL_12bn_hex
+ 20 0a
+LBL_akpk1_hex
+ 20 0a
+LBL_cal_home
+[ '.bash_history', '.bash_logout', '.bashrc', '.local', '.profile' ]
+LBL_pat_home_node
+err:EACCES: permission denied, scandir '/home/patricio'
+LBL_read_cal_profile
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
+
+# the default umask is set in /etc/profile; for setting the umask
+# for ssh logins, install and configure the libpam-umask package.
+#umask 022
+
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
+    fi
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+LBL_find_suid_all
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/gpasswd
+/usr/bin/mount
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/su
+/usr/bin/umount
+/usr/bin/sudo
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+LBL_etc_passwd_tail
+calamardo:x:1003:1003:,,,:/home/calamardo:/bin/bash
+systemd-network:x:997:997:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin
+systemd-resolve:x:995:995:systemd Resolver:/:/usr/sbin/nologin
+sshd:x:101:65534::/run/sshd:/usr/sbin/nologin
+LBL_services
+dbus-org.freedesktop.resolve1.service
+dbus-org.freedesktop.timesync1.service
+getty.target.wants
+multi-user.target.wants
+nmb.service
+samba.service
+smb.service
+sockets.target.wants
+ssh.service.requires
+sysinit.target.wants
+timers.target.wants
+apache-htcacheclean
+apache2
+dbus
+nmbd
+procps
+samba-ad-dc
+smbd
+ssh

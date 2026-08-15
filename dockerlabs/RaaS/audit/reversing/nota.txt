@@ -1,0 +1,5 @@
+estuve analizando el ransomware que el estupido de bob ejecuto para ver si lograba desencriptar sus archivos 
+pero hasta ahora no he conseguido nada, me esta costando mas de lo que pensaba, asi que comparto el binario 
+para que calamardo vea si puede hacer algo por bob.
+
+Calamardo, si logras conseguir algo, lo mas urgente es que desencriptes el archivo "private.txt" por favor
