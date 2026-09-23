@@ -25,15 +25,17 @@ Amegakure_CTFs_Labs_WriteUps/
 │   │   ├── intel_consolidada.md          <-- Inteligencia de reconocimiento
 │   │   ├── evidence/                     <-- Manifiesto de evidencias extraídas (SHA-512)
 │   │   └── ffuf/                         <-- Logs estructurados de fuzzing
-│   └── RaaS/
-│       └── audit/
-│           ├── intel_consolidada/
-│           │   ├── WRITEUP_RaaS.md        <-- Informe Forense Militar Oficial (Firmado por KuramaCore)
-│           │   └── REPORT_RaaS.md         <-- Reporte ejecutivo de la auditoría
-│           ├── recon/                     <-- Evidencia: nmap, SMB, rpc, SSH, PoC privesc
-│           ├── reversing/                  <-- Binario (copia NO ejecutada), decrypt.py, core dump, nota
-│           ├── coredump/                   <-- core.63123 (2da vía forense: KEY/IV en memoria)
-│           └── SHA512SUMS                 <-- Manifiesto de integridad criptográfica (SHA-512)
+│   ├── RaaS/
+│   │   └── audit/
+│   │       ├── intel_consolidada/
+│   │       │   ├── WRITEUP_RaaS.md        <-- Informe Forense Militar Oficial (Firmado por KuramaCore)
+│   │       │   └── REPORT_RaaS.md         <-- Reporte ejecutivo de la auditoría
+│   │       ├── recon/                     <-- Evidencia: nmap, SMB, rpc, SSH, PoC privesc
+│   │       ├── reversing/                  <-- Binario (copia NO ejecutada), decrypt.py, core dump, nota
+│   │       ├── coredump/                   <-- core.63123 (2da vía forense: KEY/IV en memoria)
+│   │       └── SHA512SUMS                 <-- Manifiesto de integridad criptográfica (SHA-512)
+│   └── darkweb/
+│       └── writeup.md                     <-- Informe Forense Militar Oficial (Firmado por K0M0RI y KuramaCore)
 └── README.md
 ```
 
@@ -45,6 +47,7 @@ Amegakure_CTFs_Labs_WriteUps/
 |---|---|---|---|---|---|
 | **DockerLabs** | `smashing` | **Hard** | RCE (`serverpi:25000` ?exec= bypass) + SUID root (`smashing`) + CSRF | **K0M0RI** & **KuramaCore** | [WRITEUP_smashing.md](./dockerlabs/smashing/WRITEUP_smashing.md) |
 | **DockerLabs** | `RaaS` | **Medium** | Enum SMB (null session) + Reversing estático AES-256-CBC (KEY/IV hardcodeados) + descifrado + PoC privesc `bob→calamardo` (NOPASSWD `/bin/node`) | **K0M0RI** & **KuramaCore** | [WRITEUP_RaaS.md](./dockerlabs/RaaS/audit/intel_consolidada/WRITEUP_RaaS.md) |
+| **DockerLabs** | `darkweb` | **Medium** | SMB guest enum → Caesar-5 .onion V3 → Tor hidden service → JS client-side leak → password spray SSH → sudo NOPASSWD + writable dir privesc | **K0M0RI** & **KuramaCore** | [writeup.md](./dockerlabs/darkweb/writeup.md) |
 
 ---
 

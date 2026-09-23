@@ -283,23 +283,7 @@ sudo /home/dark/hidden.py
 
 ---
 
-## 9. ARQUITECTURA AGÉNTICA — SENNIN ENGINE MCP
-
-| Agente | Rol | Fases |
-|--------|-----|-------|
-| **KuramaCore** | Orquestador principal (doctrina) | 0-3: Threat Model, Recon, Hipótesis, PoC |
-| **Nagato** | Web/API Pentesting specialist (shinobi) | Análisis servicio onion, JS leak, password list |
-| **LearnerAgent** | RAG estructurado (doctrina) | CVEs, MSTG, OWASP, BugcrowdVRT, historial |
-| **OnmyodonAgent** | Validador anti-FP (doctrina) | LOGIC/REPRODUCIBILITY/JUDGEMENT |
-| **ShakujoAgent** | Forja PoC forense 6 anillos (doctrina) | Estabilidad, Artefactos, Evasión, Edge Cases, Intel, Auto-doc |
-| **ShisuiAgent** | Video PoC forense (doctrina) | Pipeline: evidence → forge.py → ffmpeg → SHA512 |
-
-**Invocación:** `dispatch_to_agent` vía MCP `sennin-engine` local.  
-**Estado persistente:** `PENTEST_STATE.json` + `session_graph.json` (Kùzu graph).
-
----
-
-## 10. CHECKLIST DE CONFORMIDAD HONORABLE (PRE-SUBMISSION AUDIT)
+## 9. CHECKLIST DE CONFORMIDAD HONORABLE (PRE-SUBMISSION AUDIT)
 
 - [x] ¿Interacción **únicamente** a través de IP de red (172.17.0.2)?
 - [x] ¿Evitado **completo** `docker exec/inspect/diff` e inspección `.tar`?
@@ -311,7 +295,7 @@ sudo /home/dark/hidden.py
 
 ---
 
-## 11. CONCLUSIÓN
+## 10. CONCLUSIÓN
 
 El laboratorio **darkweb (172.17.0.2)** ha sido comprometido **end-to-end** bajo doctrina **AmegakureDōjō / Shakujo Forge V3** con:
 
