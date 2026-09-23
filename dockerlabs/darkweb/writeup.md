@@ -283,19 +283,7 @@ sudo /home/dark/hidden.py
 
 ---
 
-## 9. CHECKLIST DE CONFORMIDAD HONORABLE (PRE-SUBMISSION AUDIT)
-
-- [x] ¿Interacción **únicamente** a través de IP de red (172.17.0.2)?
-- [x] ¿Evitado **completo** `docker exec/inspect/diff` e inspección `.tar`?
-- [x] ¿Evitado **completo** búsqueda writeups/walkthroughs en internet?
-- [x] ¿Origen **demostrable y trazable** de cada credencial y vector?
-- [x] ¿Reverse Shell real estabilizada (SSH `dark:oniondarkgood`)?
-- [x] ¿Escalada a root via **mala configuración identificada** (sudo NOPASSWD + writable script)?
-- [x] ¿Hashes **SHA-512 calculados in-situ** para certificación forense?
-
----
-
-## 10. CONCLUSIÓN
+## 9. CONCLUSIÓN
 
 El laboratorio **darkweb (172.17.0.2)** ha sido comprometido **end-to-end** bajo doctrina **AmegakureDōjō / Shakujo Forge V3** con:
 

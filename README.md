@@ -1,6 +1,6 @@
 # 🏯 Amegakure_CTFs_Labs_WriteUps
 
-## AMEGAKURE_FORGE_DATE: 2026-08-14T11:00:00Z
+## AMEGAKURE_FORGE_DATE: 2026-09-23T10:15:00Z
 
 Repositorio Oficial de Registro Forense, Auditoría y Explotación de Máquinas CTFs, Laboratorios y Entornos Vulnerables del **Ecosistema AmegakureDojo**.
 
@@ -28,7 +28,7 @@ Amegakure_CTFs_Labs_WriteUps/
 │   ├── RaaS/
 │   │   └── audit/
 │   │       ├── intel_consolidada/
-│   │       │   ├── WRITEUP_RaaS.md        <-- Informe Forense Militar Oficial (Firmado por KuramaCore)
+│   │       │   ├── WRITEUP_RaaS.md        <-- Informe Forense Militar Oficial (Firmado por K0M0RI y KuramaCore)
 │   │       │   └── REPORT_RaaS.md         <-- Reporte ejecutivo de la auditoría
 │   │       ├── recon/                     <-- Evidencia: nmap, SMB, rpc, SSH, PoC privesc
 │   │       ├── reversing/                  <-- Binario (copia NO ejecutada), decrypt.py, core dump, nota
